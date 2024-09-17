@@ -1,0 +1,135 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.Navigation-Pill-List {
+    height: 50px;
+    padding: 25px 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+.Navigation-Pill-List :hover {
+    color: orangered;
+}
+
+.Navigation-Pill {
+    height: 10px;
+    width: 35px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #ededed;
+    max-width: fit-content;
+}
+.Navigation-Pill :hover{
+    color: #1e1e1e;
+}
+
+.headfont {
+    width: 50px;
+    height: 10px;
+    flex-grow: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e1e1e;
+}
+
+/*hero section*/
+.Hero-Text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1e1e1e;
+}
+
+.Hero-Description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1e1e1e;
+}
+
+/*background image*/
+.section {
+    margin-top: 2%;
+    padding: 1% 1%;
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    position: relative;
+    background-image: url("../img/img-bck-index1.png");
+    background-color: rgba(255, 255, 255, 0.689);
+    background-blend-mode: lighten;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+/* about-section */
+.blogs-section {
+    padding: 30px;
+    padding-top: 30vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+}
+
+.blog-text-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 400px;
+}
+
+.blog-image-container {
+    display: flex;
+    max-width: 49vw;
+    min-width: 300px;
+    min-height: 250px;
+}
+
+.blog-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn-dark {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    background-color: #123524;
+    color: white;
+    max-width: fit-content;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+}
