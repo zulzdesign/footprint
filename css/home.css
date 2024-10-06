@@ -54,6 +54,11 @@ html {
 }
 
 /*hero section*/
+.text-content-title {
+    display: flex;
+    flex-direction: column;
+}
+
 .Hero-Name {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3.1em;
