@@ -1,11 +1,13 @@
-
 * {
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 a:link {
     text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .Navigation-Pill-List {
@@ -16,6 +18,7 @@ a:link {
     align-items: center;
     gap: 25px;
 }
+
 .Navigation-Pill-List :hover {
     color: orangered;
 }
@@ -33,7 +36,8 @@ a:link {
     background-color: #ededed;
     max-width: fit-content;
 }
-.Navigation-Pill :hover{
+
+.Navigation-Pill :hover {
     color: #1e1e1e;
 }
 
@@ -50,22 +54,46 @@ a:link {
 }
 
 /*hero section*/
-.Hero-Text {
+.Hero-Name {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 35px;
-    line-height: 1;
+    font-size: 3.1em;
+    line-height: 0.1;
     letter-spacing: normal;
     text-align: center;
-    color: #1e1e1e;
+    color: #333;
+}
+
+.Hero-Text {
+    font-family: Helvetica, Arial, 'Arial Narrow', sans-serif;
+    font-size: 1.8em;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333;
+}
+
+.dynamic-text {
+    color: #ff6347;
+    /* Highlight the dynamic word with a different color */
 }
 
 .Hero-Description {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 1.5;
     letter-spacing: normal;
     text-align: center;
-    color: #1e1e1e;
+    color: #333;
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    width: auto;
+    cursor: pointer;
 }
 
 /*background image*/
@@ -79,16 +107,23 @@ a:link {
     align-items: center;
     row-gap: 10px;
     position: relative;
-    background-image: url("../img/img-bck-index1.png");
+    background-image: url("https://lh3.googleusercontent.com/d/1CfqM7WSj6RkpqJq7eO7EqzC1iOxhC2RO");
     background-color: rgba(255, 255, 255, 0.689);
     background-blend-mode: lighten;
     background-position: 50% 50%;
     background-size: cover;
 }
 
+
+/* https://lh3.googleusercontent.com/d/ --id of the image in g drive-- */
+/* ../img/img-bck-index1.png */
+/* https://lh3.googleusercontent.com/pw/AP1GczO1BsRXBTsD-RXe22X8jlL5JEU34Gly40AYrRfRzWbsDM66RySwKGYiSRzqRubAR4nsCuHmmuwsvQngvUxrSNgDeq1UGGhhF6SMW6ytncfTsd7SpP8=w2400 */
+/* https://lh3.googleusercontent.com/pw/AP1GczP2gemTnPlKCj50TxhyeVEvxMEWpE7l3TMnqG6MaiYABn5B9szVU4ndOwpiXPaCsiisO9n-PnyodbOfnArDIPr6nXFsUXtUA9bP8N8sSPxKF_pzd9Y=w2400 */
+
 /* about-section */
 .blogs-section {
     padding: 30px;
+    margin-bottom: 110px;
     padding-top: 30vh;
     max-width: 100vw;
     display: flex;
@@ -102,13 +137,15 @@ a:link {
 .blog-text-container {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
-    max-width: 400px;
+    justify-content: center;
+    row-gap: 5px;
+    max-width: 500px;
+    font-size: 1.1em;
 }
 
 .blog-image-container {
     display: flex;
-    max-width: 49vw;
+    max-width: 600px;
     min-width: 300px;
     min-height: 250px;
 }
@@ -125,11 +162,15 @@ a:link {
     flex-direction: row;
     background-color: #123524;
     color: white;
-    max-width: fit-content;
+    min-width: 155px;
     padding: 8px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     border-radius: 10px;
+}
+
+.dynamic-text-btn{
+    color: orange;
 }
