@@ -151,7 +151,7 @@ html {
 .blog-image-container {
     display: flex;
     max-width: 600px;
-    min-width: 300px;
+    min-width: auto;
     min-height: 250px;
 }
 
