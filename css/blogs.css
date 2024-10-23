@@ -1,0 +1,148 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;   
+    font-size: 1em;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.Navigation-Pill-List {
+    height: 50px;
+    padding: 25px 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+.Navigation-Pill-List :hover {
+    color: orangered;
+}
+
+.Navigation-Pill {
+    height: 10px;
+    width: 35px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #ededed;
+}
+.Navigation-Pill :hover{
+    color: #1e1e1e;
+}
+
+.headfont {
+    width: 50px;
+    height: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e1e1e;
+}
+
+/* Body */
+
+#cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 300px;
+    height: 270px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.images {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.show-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 300px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: #ededed;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.9s ease, color 0.9s ease;
+}
+.show-more:hover {
+    color: #ededed;
+    background-color: #333;
+}
+
+.btn-dark {
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ededed;
+    color: #1e1e1e;
+    max-width: fit-content;
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-dark:hover {
+    color: #ededed;
+    background-color: #333;
+}
+
+@media (max-width: 500px) {
+
+    .Navigation-Pill-List {
+        justify-content: center;
+        /* Center the navigation pills in small screens */
+        padding: 10px;
+        gap: 15px;
+    }
+
+    #cards-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .show-more{
+        margin: 30px 10px;
+        height: 40px;
+    }
+}
