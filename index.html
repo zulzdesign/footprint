@@ -13,9 +13,6 @@
         <a href="blogs.html">
             <span class="headfont">Blogs</span>
         </a>
-        <!-- <a onClick='alert("This path is for Author only")'>
-                <span class="headfont"></span>
-            </a> -->
     </div>
 </head>
 
@@ -29,12 +26,7 @@
                 LEARN BY <span class="dynamic-text" id="dynamic-word">CODOING</span>
             </div>
         </div>
-        <!-- <div>
-            <a href="blogs.html" class="btn-dark">Get Started</a>
-        </div> -->
     </div>
-
-    <img class="arrow-down" src="./img/arrow-down-3101.svg" alt="" onclick="arrowDown()">
 
     <section class="blogs-section">
         <div class="blog-text-container">
@@ -44,47 +36,33 @@
                 in between. I hope you find this blog informative and inspiring to those that share my passion for
                 design logic.</p>
             <div>
-                <a href="blogs.html" class="btn-dark">Explore&nbsp<span class="dynamic-text-btn" id="dynamic-word1"> More or
-                        Less</span></a>
-                <!-- <a href="blogs.html" class="btn-dark">Read Latest Blog</a> -->
+                <a href="blogs.html" class="btn-dark">Explore&nbsp<span class="dynamic-text-btn" id="dynamic-word1">More or Less</span></a>
             </div>
         </div>
         <div class="blog-image-container">
-            <img src="./img/img-bck-index.png" class="blog-image" alt="">
+            <img src='https://lh3.googleusercontent.com/d/1-EfxODCVbZ3ZT3uwomm8PYIYmXJmwAKK' class="blog-image" alt="">
         </div>
-    </section>
+
+    </section> 
     <script>
-        // Array of alternating words
         const words = ["DO+ING", "DOING", "CO+DING", "CODING", "CO+DO+ING", "CODOING"];
         const words1 = [" More or Less", " Less or More", " Less is More", " More is More",];
-
-        let currentIndex = 0; // To keep track of the current word
-
-        // Function to alternate the dynamic word
+        let currentIndex = 2;
+        setInterval(alternateWord, 1700);
+        
         function alternateWord() {
-            // Get the span element containing the dynamic text
             const dynamicWordElement = document.getElementById('dynamic-word');
             const dynamicWordElement1 = document.getElementById('dynamic-word1');
-
-            // Set the text content to the next word in the array
             dynamicWordElement.textContent = words[currentIndex % words.length];
             dynamicWordElement1.textContent = words1[currentIndex % words1.length];
-
-            // Move to the next word, looping back if necessary
             currentIndex++;
         }
 
-        // Call the function every 1 second (1000 milliseconds)
-        setInterval(alternateWord, 1700);
-
         const arrow = document.querySelector(".arrow-down");
-
         function arrowDown() {
-            // Scroll to the section with the ID 'About'
             window.location.href = "#About";
-            // Toggle arrow rotation
             if (arrow.style.transform === "rotate(180deg) translateX(15px)") {
-                arrow.style.transform = "rotate(0deg) translateX(-15px)";  // Rotate back to downward position
+                arrow.style.transform = "rotate(0deg) translateX(-15px)";  // Rotate back downward
                 scrollTo(0, 0);
             } else {
                 arrow.style.transform = "rotate(180deg) translateX(15px)";
