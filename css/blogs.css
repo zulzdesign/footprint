@@ -8,13 +8,14 @@ a:link {
 }
 
 .Navigation-Pill-List {
-    height: 50px;
-    padding: 25px 25px;
+    height: 70px;
+    padding: 25px 40px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 25px;
 }
+
 .Navigation-Pill-List :hover {
     color: orangered;
 }
