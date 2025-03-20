@@ -2,6 +2,15 @@ a:link {
     text-decoration: none;
 }
 
+.logo {
+    display: flex;
+    padding-left: 0px;  
+    margin-left: 0px;
+    margin-right: auto;
+    translate: 0px;
+    width: 50px
+}
+
 .Navigation-Pill-List {
     height: 70px;
     padding: 25px 40px;
