@@ -62,7 +62,7 @@ async function uploadTextFile(content, fileName) {
 const hrefBtn = document.querySelectorAll('.abtn');
 hrefBtn.forEach(anchor => {
     anchor.addEventListener('click', (e) => {
-        anchor.href = 'https://script.google.com/macros/s/AKfycbyHJ1bVPNbLeJF9BnRkBHsr9X0uVdfb6X_xFohn0blDO-5ZOjBgVr6gHTNh_b9IJ9G17A/exec';
+        anchor.href = "_blank"; //APIscript Upload image and fetch URL outside of firebase reduce DB storage Usage.
     })
 })
 
